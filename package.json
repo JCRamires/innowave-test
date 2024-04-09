@@ -1,0 +1,28 @@
+{
+  "name": "react-challenge-1",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "homepage": "https://inw-react-challenge-1.vercel.app",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "preview": "vite preview",
+    "ts-check": "tsc --noEmit",
+    "test": "vitest --run --reporter verbose",
+    "test-watch": "vitest --watch"
+  },
+  "dependencies": {
+    "@picocss/pico": "^1.5.7",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "devDependencies": {
+    "@types/react": "^18.0.27",
+    "@types/react-dom": "^18.0.10",
+    "@vitejs/plugin-react": "^3.1.0",
+    "typescript": "^4.9.3",
+    "vite": "^4.1.0",
+    "vitest": "^0.28.4"
+  }
+}

@@ -1,7 +1,15 @@
-import { describe, it, expect } from "vitest";
+import { describe, it, expect, beforeEach, vi, afterEach } from "vitest";
 import { convertStringToTags, createId } from "./utils";
 
 describe("convertStringToTags()", () => {
+  beforeEach(() => {
+    vi.useFakeTimers();
+  });
+
+  afterEach(() => {
+    vi.useRealTimers();
+  });
+
   it("should return a list of tags", () => {
     expect(convertStringToTags("hello,bye,something")).toEqual([
       "hello",
@@ -30,6 +38,9 @@ describe("convertStringToTags()", () => {
 
 describe("createId", () => {
   it("should return a number", () => {
-    // implement me
+    const fakeDate = new Date(2024, 1, 1, 12);
+    vi.setSystemTime(fakeDate);
+
+    expect(createId()).toEqual(1706788800000);
   });
 });

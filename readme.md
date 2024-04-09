@@ -68,7 +68,7 @@ Our developers will review your solution and get back to you as soon as possible
 
 You can search for `implement me` in the codebase to find where code is missing.
 
-- [ ] Implement the add Todo form.
+- [x] Implement the add Todo form.
 
 Tags are optional and should be processed by `convertStringToTags` from `utils.ts`. There is an equivalent test for this function that will help you figure out the implementation.
 
@@ -77,9 +77,9 @@ Some UI/UX notes:
 - A Todo can't be added without a title.
 - Tags are optional.
 
-- [ ] Implement the missing test in `utils.spec.ts`
-- [ ] Render a list of Todos
-- [ ] Render a list of completed Todos
-- [ ] Clicking on each Todo's checkbox will toggle its completed state.
+- [x] Implement the missing test in `utils.spec.ts`
+- [x] Render a list of Todos
+- [x] Render a list of completed Todos
+- [x] Clicking on each Todo's checkbox will toggle its completed state.
 
 Good luck and do your best! :)
